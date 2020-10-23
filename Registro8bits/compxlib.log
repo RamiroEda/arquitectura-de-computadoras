@@ -1,0 +1,93 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.5 (P.58f)
+   \   \         APPLICATION : D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.5 - D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe 14.5 (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Reading the compxlib configuration file - 'compxlib.cfg' ...
+Library Source Paths => 'D:/Xilinx/14.5/ISE_DS/ISE'
+Current Working Directory => 'D:\Github\arquitectura-de-computadoras\Registro8bits'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: aartix7
+
+Scheduling library installation & compilation for libraries: simprim unisim xilinxcorelib edk
+
+Signature:-
+------------------------------------------------------------------------------
+D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe -s riviera -l vhdl -arch aartix7 -lib unisim -lib simprim -lib xilinxcorelib -lib edk -exclude_superseded -intstyle ise 
+------------------------------------------------------------------------------
+ERROR:Compxlib - COMPXLIB[sim]: Unable to automatically find executables for simulator 'riviera' from the following paths:
+    D:\Xilinx\14.5\ISE_DS\ISE\\lib\nt64
+   D:\Xilinx\14.5\ISE_DS\ISE\\bin\nt64
+   D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64
+   D:\Xilinx\14.5\ISE_DS\ISE\lib\nt64
+   D:\Xilinx\14.5\ISE_DS\ISE\..\..\..\DocNav
+   D:\Xilinx\14.5\ISE_DS\PlanAhead\bin
+   D:\Xilinx\14.5\ISE_DS\EDK\bin\nt64
+   D:\Xilinx\14.5\ISE_DS\EDK\lib\nt64
+   D:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\nt64\bin
+   D:\Xilinx\14.5\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin
+   D:\Xilinx\14.5\ISE_DS\EDK\gnuwin\bin
+   D:\Xilinx\14.5\ISE_DS\EDK\gnu\arm\nt\bin
+   D:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin
+   D:\Xilinx\14.5\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin
+   D:\Xilinx\14.5\ISE_DS\common\bin\nt64
+   D:\Xilinx\14.5\ISE_DS\common\lib\nt64
+   C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\bin
+   C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\libnvvp
+   C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+   C:\Windows\system32
+   C:\Windows
+   C:\Windows\System32\Wbem
+   C:\Windows\System32\WindowsPowerShell\v1.0\
+   C:\Program Files\Git\cmd
+   C:\dev\flutter\bin
+   C:\WINDOWS\System32\OpenSSH\
+   C:\Program Files\Android\Android Studio\jre\bin\
+   C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR
+   C:\Program Files\OpenSSL-Win64\bin
+   C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include
+   D:\dev\cuda\bin
+   C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\extras\CUPTI\libx64
+   D:\Node\
+   C:\Users\PC\AppData\Local\Android\Sdk\platform-tools
+   C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+   C:\Program Files\MATLAB\R2020b\bin
+   C:\Program Files\NVIDIA Corporation\Nsight Compute 2020.2.0\
+   D:\Python\Python35\Scripts\
+   D:\Python\Python35\
+   D:\Python\Python38\Scripts\
+   D:\Python\Python38\
+   D:\Python\Python39\Scripts\
+   D:\Python\Python39\
+   C:\Cadence\SPB_16.6\openaccess\bin\win32\opt
+   C:\Cadence\SPB_16.6\tools\capture
+   C:\Cadence\SPB_16.6\tools\pspice
+   C:\Cadence\SPB_16.6\tools\specctra\bin
+   C:\Cadence\SPB_16.6\tools\fet\bin
+   C:\Cadence\SPB_16.6\tools\libutil\bin
+   C:\Cadence\SPB_16.6\tools\bin
+   C:\Cadence\SPB_16.6\tools\pcb\bin
+   C:\Users\PC\.windows-build-tools\python27\
+   C:\Users\PC\AppData\Local\Microsoft\WindowsApps
+   C:\Users\PC\AppData\Local\GitHubDesktop\bin
+   C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.1\bin
+   C:\Program Files\JetBrains\CLion 2019.2.2\bin
+   C:\Users\PC\AppData\Local\Programs\Microsoft VS Code\bin
+   C:\Program Files\JetBrains\PyCharm 2019.2.3\bin
+   C:\Program Files\JetBrains\PhpStorm 2019.2.3\bin
+   C:\Users\PC\AppData\Roaming\npm
+   D:\xampp\php
+   C:\Users\PC\AppData\Local\ComposerSetup\bin
+   C:\Users\PC\AppData\Roaming\Composer\vendor\bin
+   C:\texlive\2020\bin\win32.
+Simulator 'riviera' is ignored.

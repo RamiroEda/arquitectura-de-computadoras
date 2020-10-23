@@ -1,0 +1,2 @@
+vhdl work "registro8bits.vhd"
+vhdl work "RegistroTB.vhd"

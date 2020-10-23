@@ -1,0 +1,22 @@
+Running: D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/ALUTB_isim_beh.exe -prj D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/ALUTB_beh.prj work.ALUTB 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 6
+Turning on mult-threading, number of parallel sub-compilation jobs: 12 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/PC/Downloads/ALUTB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package numeric_std
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavior of entity alutb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 8 VHDL Units
+Built simulation executable D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/ALUTB_isim_beh.exe
+Fuse Memory Usage: 36932 KB
+Fuse CPU Usage: 452 ms

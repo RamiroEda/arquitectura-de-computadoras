@@ -1,0 +1,17 @@
+ISim log file
+Running: D:\Github\arquitectura-de-computadoras\Registro8bits\RegistroTB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Github/arquitectura-de-computadoras/Registro8bits/RegistroTB_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 230 ns: Note: 
+
+Número de pruebas realizadas: 13
+
+Número de pruebas no superadas: 0
+
+ (/registrotb/).

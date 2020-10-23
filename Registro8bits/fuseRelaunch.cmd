@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Github/arquitectura-de-computadoras/Registro8bits/RegistroTB_isim_beh.exe" -prj "D:/Github/arquitectura-de-computadoras/Registro8bits/RegistroTB_beh.prj" "work.RegistroTB" 

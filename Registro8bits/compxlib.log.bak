@@ -1,0 +1,19 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.5 (P.58f)
+   \   \         APPLICATION : D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.5 - D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe 14.5 (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Reading the compxlib configuration file - 'compxlib.cfg' ...
+ERROR:Compxlib:262 - COMPXLIB[option]: Invalid simulator 'ncsim' specified for -s.
+
+<ToolTip>: run 'compxlib -help sim' to list the names of valid simulators
+ERROR:Compxlib:226 - COMPXLIB[cfg]: No simulator specified for compilation ...
