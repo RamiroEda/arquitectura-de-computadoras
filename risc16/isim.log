@@ -1,0 +1,151 @@
+ISim log file
+Running: D:\Github\arquitectura-de-computadoras\risc16\RISC16TB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Github/arquitectura-de-computadoras/risc16/RISC16TB_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /risc16tb/uut/mControlUnit/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /risc16tb/uut/mInstructionMemory/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 100 ns: Error: Error en salida
+at 110 ns: Error: Error en salida
+at 120 ns: Error: Error en salida
+at 130 ns: Error: Error en salida
+at 150 ns: Error: Error en salida
+at 160 ns: Error: Error en salida
+at 170 ns: Error: Error en salida
+at 180 ns: Error: Error en salida
+at 190 ns: Error: Error en salida
+at 200 ns: Error: Error en salida
+at 210 ns: Error: Error en salida
+at 220 ns: Error: Error en salida
+at 230 ns: Error: Error en salida
+at 250 ns: Error: Error en salida
+at 260 ns: Error: Error en salida
+at 270 ns: Error: Error en salida
+at 310 ns: Error: Error en salida
+at 320 ns: Error: Error en salida
+at 330 ns: Error: Error en salida
+at 350 ns: Error: Error en salida
+at 360 ns: Error: Error en salida
+at 370 ns: Error: Error en salida
+at 380 ns: Error: Error en salida
+at 390 ns: Error: Error en salida
+at 400 ns: Error: Error en salida
+at 410 ns: Error: Error en salida
+at 420 ns: Error: Error en salida
+at 430 ns: Error: Error en salida
+at 440 ns: Error: Error en salida
+at 450 ns: Error: Error en salida
+at 480 ns: Error: Error en salida
+at 490 ns: Error: Error en salida
+at 500 ns: Error: Error en salida
+at 550 ns: Error: Error en salida
+at 560 ns: Error: Error en salida
+at 570 ns: Error: Error en salida
+at 590 ns: Error: Error en salida
+at 600 ns: Error: Error en salida
+at 610 ns: Error: Error en salida
+at 620 ns: Error: Error en salida
+at 630 ns: Error: Error en salida
+at 640 ns: Error: Error en salida
+at 650 ns: Error: Error en salida
+at 660 ns: Error: Error en salida
+at 670 ns: Error: Error en salida
+at 680 ns: Error: Error en salida
+at 690 ns: Error: Error en salida
+at 730 ns: Error: Error en salida
+at 740 ns: Error: Error en salida
+at 760 ns: Error: Error en salida
+at 790 ns: Error: Error en salida
+at 800 ns: Error: Error en salida
+at 810 ns: Error: Error en salida
+at 830 ns: Error: Error en salida
+at 840 ns: Error: Error en salida
+at 850 ns: Error: Error en salida
+at 860 ns: Error: Error en salida
+at 870 ns: Error: Error en salida
+at 880 ns: Error: Error en salida
+at 890 ns: Error: Error en salida
+at 900 ns: Error: Error en salida
+at 910 ns: Error: Error en salida
+at 920 ns: Error: Error en salida
+at 930 ns: Error: Error en salida
+at 970 ns: Error: Error en salida
+at 980 ns: Error: Error en salida
+at 990 ns: Error: Error en salida
+# restart
+# run 1.00us
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /risc16tb/uut/mInstructionMemory/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 100 ns: Error: Error en salida
+at 110 ns: Error: Error en salida
+at 120 ns: Error: Error en salida
+at 130 ns: Error: Error en salida
+at 150 ns: Error: Error en salida
+at 160 ns: Error: Error en salida
+at 170 ns: Error: Error en salida
+at 180 ns: Error: Error en salida
+at 190 ns: Error: Error en salida
+at 200 ns: Error: Error en salida
+at 210 ns: Error: Error en salida
+at 220 ns: Error: Error en salida
+at 230 ns: Error: Error en salida
+at 250 ns: Error: Error en salida
+at 260 ns: Error: Error en salida
+at 270 ns: Error: Error en salida
+at 310 ns: Error: Error en salida
+at 320 ns: Error: Error en salida
+at 330 ns: Error: Error en salida
+at 350 ns: Error: Error en salida
+at 360 ns: Error: Error en salida
+at 370 ns: Error: Error en salida
+at 380 ns: Error: Error en salida
+at 390 ns: Error: Error en salida
+at 400 ns: Error: Error en salida
+at 410 ns: Error: Error en salida
+at 420 ns: Error: Error en salida
+at 430 ns: Error: Error en salida
+at 440 ns: Error: Error en salida
+at 450 ns: Error: Error en salida
+at 480 ns: Error: Error en salida
+at 490 ns: Error: Error en salida
+at 500 ns: Error: Error en salida
+at 550 ns: Error: Error en salida
+at 560 ns: Error: Error en salida
+at 570 ns: Error: Error en salida
+at 590 ns: Error: Error en salida
+at 600 ns: Error: Error en salida
+at 610 ns: Error: Error en salida
+at 620 ns: Error: Error en salida
+at 630 ns: Error: Error en salida
+at 640 ns: Error: Error en salida
+at 650 ns: Error: Error en salida
+at 660 ns: Error: Error en salida
+at 670 ns: Error: Error en salida
+at 680 ns: Error: Error en salida
+at 690 ns: Error: Error en salida
+at 730 ns: Error: Error en salida
+at 740 ns: Error: Error en salida
+at 760 ns: Error: Error en salida
+at 790 ns: Error: Error en salida
+at 800 ns: Error: Error en salida
+at 810 ns: Error: Error en salida
+at 830 ns: Error: Error en salida
+at 840 ns: Error: Error en salida
+at 850 ns: Error: Error en salida
+at 860 ns: Error: Error en salida
+at 870 ns: Error: Error en salida
+at 880 ns: Error: Error en salida
+at 890 ns: Error: Error en salida
+at 900 ns: Error: Error en salida
+at 910 ns: Error: Error en salida
+at 920 ns: Error: Error en salida
+at 930 ns: Error: Error en salida
+at 970 ns: Error: Error en salida
+at 980 ns: Error: Error en salida
+at 990 ns: Error: Error en salida

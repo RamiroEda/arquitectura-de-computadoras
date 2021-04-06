@@ -1,0 +1,28 @@
+Command line:
+   CISC8_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51944
+
+Mon Dec 21 22:04:10 2020
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5159.96 Meg
+
+ Total Signals          : 191
+ Total Nets             : 2375
+ Total Signal Drivers   : 68
+ Total Blocks           : 27
+ Total Primitive Blocks : 25
+ Total Processes        : 44
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 3402
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5002.67 Meg
+
+Mon Dec 21 22:13:55 2020
+

@@ -1,0 +1,7 @@
+[Inputs]
+Selection
+=Input0[15:0]=
+=Input1[15:0]=
+[Outputs]
+=Output[15:0]=
+[BiDir]

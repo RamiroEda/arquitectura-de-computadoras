@@ -1,71 +1,90 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    15:19:54 10/23/2020 
--- Design Name: 
--- Module Name:    ALU - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ALU is
-    Port ( A : in  STD_LOGIC_VECTOR (7 downto 0);
-           B : in  STD_LOGIC_VECTOR (7 downto 0);
-           Operate : in  STD_LOGIC;
-           Operation : in  STD_LOGIC_VECTOR (1 downto 0);
-           Result : out  STD_LOGIC_VECTOR (7 downto 0));
+ Port ( A_ALU : in  STD_LOGIC_VECTOR (7 downto 0);--Acumulador A
+        B_ALU : in  STD_LOGIC_VECTOR (7 downto 0);--Acumulador B
+        OP_ALU : in  STD_LOGIC_VECTOR (5 downto 0);--Operación
+        N_ALU : in  STD_LOGIC_VECTOR (2 downto 0);--Cuanto se desplaza
+        I_IN : in STD_LOGIC;
+        V_IN : in STD_LOGIC;--Desborde
+        C_IN : in STD_LOGIC;--Carry
+        S_ALU : out  STD_LOGIC_VECTOR (7 downto 0);--Salida
+        FLAGS_ALU : out  STD_LOGIC_VECTOR (4 downto 0));--Banderas
 end ALU;
 
 architecture Behavioral of ALU is
-	
-begin
-	process(Operate, Operation, A, B)
-	begin
-		if Operate = '1' then
-			--Si OPERATE esta en ALTO entonces va a realizar la operacion
 		
-			--No me deja porque me pide el VHDL 2008 :c
-			--Result <=	std_logic_vector(unsigned(A)+unsigned(B)) when Operation = "00" else
-			--				std_logic_vector(unsigned(A)-unsigned(B)) when Operation = "01" else
-			--				(A and B) 											when Operation = "10" else
-			--				(A or B) 											when Operation = "11";
+begin
+		S_ALU <= A_ALU AND B_ALU when (OP_ALU = std_logic_vector(to_unsigned(0,6))) else --Para <- A AND B y B <- A AND B
+					A_ALU OR B_ALU when (OP_ALU = std_logic_vector(to_unsigned(1,6))) else --Para A <- A OR B y B <- A OR B
+					A_ALU XOR B_ALU when (OP_ALU = std_logic_vector(to_unsigned(2,6))) else --Para A <- A XOR B y B <- A XOR B
+					A_ALU NAND B_ALU when(OP_ALU = std_logic_vector(to_unsigned(3,6))) else --Para A <- A NAND B y B <- A NAND B
+					A_ALU NOR B_ALU when (OP_ALU = std_logic_vector(to_unsigned(4,6))) else --Para A <- A NOR B y B <- A NOR B
+					A_ALU XNOR B_ALU when (OP_ALU = std_logic_vector(to_unsigned(5,6))) else --Para A <- A XNOR B B <- A XNOR B
+					NOT A_ALU when (OP_ALU = std_logic_vector(to_unsigned(6,6))) else --Para Acc <- NOT A
+					NOT B_ALU when (OP_ALU = std_logic_vector(to_unsigned(7,6))) else --Para Acc <- NOT B
+					std_logic_vector(signed(A_ALU) sll to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(8,6))) else --Para A <- A SLL N
+					std_logic_vector(signed(B_ALU) sll to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(9,6))) else --Para B <- B SLL N
+					std_logic_vector(signed(A_ALU) srl to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(10,6))) else --Para A <- A SRL N
+					std_logic_vector(signed(B_ALU) srl to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(11,6))) else --Para B <- B SRL N
+					to_stdlogicvector(to_bitvector(A_ALU) sra to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(12,6))) else --Para A <- A SRA N
+					to_stdlogicvector(to_bitvector(B_ALU) sra to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(13,6))) else --Para B <- B SRA N
+					to_stdlogicvector(to_bitvector(A_ALU) rol to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(14,6))) else --Para A <- A ROL N
+					to_stdlogicvector(to_bitvector(B_ALU) rol to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(15,6))) else --Para B <- B ROL N
+					to_stdlogicvector(to_bitvector(A_ALU) ror to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(16,6))) else --Para A <- A ROR N
+					to_stdlogicvector(to_bitvector(B_ALU) ror to_integer(signed(N_ALU))) when (OP_ALU = std_logic_vector(to_unsigned(17,6))) else --Para B <- B ROR N
+					to_stdlogicvector(to_bitvector(C_IN & A_ALU) rol to_integer(signed(N_ALU)))(7 downto 0) when (OP_ALU = std_logic_vector(to_unsigned(18,6))) else --Para A <- A RCL N
+					to_stdlogicvector(to_bitvector(C_IN & B_ALU) rol to_integer(signed(N_ALU)))(7 downto 0) when (OP_ALU = std_logic_vector(to_unsigned(19,6))) else --Para B <- B RCL N
+					to_stdlogicvector(to_bitvector(C_IN & A_ALU) ror to_integer(signed(N_ALU)))(7 downto 0) when (OP_ALU = std_logic_vector(to_unsigned(20,6))) else --Para A <- A RCR N
+					to_stdlogicvector(to_bitvector(C_IN & B_ALU) ror to_integer(signed(N_ALU)))(7 downto 0) when (OP_ALU = std_logic_vector(to_unsigned(21,6))) else --Para B <- B RCR N
+					std_logic_vector(signed(NOT A_ALU + 1)) when (OP_ALU = std_logic_vector(to_unsigned(22,6))) else --Para A <-(NOT A +1)
+					std_logic_vector(signed(NOT B_ALU + 1)) when (OP_ALU = std_logic_vector(to_unsigned(23,6))) else --Para B <-(NOT B +1)
+					std_logic_vector(signed(A_ALU) + signed(B_ALU)) when (OP_ALU = std_logic_vector(to_unsigned(30,6))) else --Para A <- A + B
+					std_logic_vector(signed(A_ALU) + signed(B_ALU)) when (OP_ALU = std_logic_vector(to_unsigned(31,6))) else --Para B <- A + B
+					std_logic_vector(signed(A_ALU) - signed(B_ALU)) when (OP_ALU = std_logic_vector(to_unsigned(32,6)))else --Para A <- A - B
+					std_logic_vector(signed(B_ALU) - signed(A_ALU)) when (OP_ALU = std_logic_vector(to_unsigned(33,6))) else --Para B <- B - A
+					std_logic_vector(signed(A_ALU) + 1) when (OP_ALU = std_logic_vector(to_unsigned(34,6))) else --Para A <- A + 1
+					std_logic_vector(signed(B_ALU) + 1) when (OP_ALU = std_logic_vector(to_unsigned(35,6))) else --Para B <- B + 1
+					std_logic_vector(signed(A_ALU) - 1) when (OP_ALU = std_logic_vector(to_unsigned(36,6))) else --Para A <- A - 1
+					std_logic_vector(signed(B_ALU) - 1) when (OP_ALU = std_logic_vector(to_unsigned(37,6))) else --Para B <- B - 1
+					"00000000";
+		
+		--FLAGS que representa C con varias operaciones que usan carry
+		FLAGS_ALU(0) <= '0' when (OP_ALU = "011000"
+										  OR (OP_ALU = std_logic_vector(to_unsigned(31,6)))) 
+								  else '1' when (OP_ALU = "011001"
+										  OR (OP_ALU = std_logic_vector(to_unsigned(18,6)))
+										  OR (OP_ALU = std_logic_vector(to_unsigned(19,6)))
+										  OR (OP_ALU = std_logic_vector(to_unsigned(20,6)))
+										  OR (OP_ALU = std_logic_vector(to_unsigned(30,6)))
+										  OR (OP_ALU = std_logic_vector(to_unsigned(32,6)))
+										  OR (OP_ALU = std_logic_vector(to_unsigned(35,6))))					
+								  else C_IN;
+								  
+		--FLAGS que representa V con varias operaciones que usan overflow	
+		FLAGS_ALU(1) <= '0' when (OP_ALU = "011010"
+											OR (OP_ALU = std_logic_vector(to_unsigned(22,6)))) 
+			else '1' when (OP_ALU = "011011"
+											OR (OP_ALU = std_logic_vector(to_unsigned(23,6)))
+											OR (OP_ALU = std_logic_vector(to_unsigned(31,6)))
+											OR (OP_ALU = std_logic_vector(to_unsigned(32,6)))
+											OR (OP_ALU = std_logic_vector(to_unsigned(34,6)))) 
+			else V_IN;
 			
-			
-			if Operation = "00" then -- Suma
-				Result<= std_logic_vector(unsigned(A)+unsigned(B));
-			elsif Operation = "01" then -- Resta
-				Result<= std_logic_vector(unsigned(A)-unsigned(B));
-			elsif Operation = "10" then -- AND
-				Result<= A and B;
-			elsif Operation = "11" then -- OR
-				Result<= A or B;
-			end if;
-		else
-			-- Si OPERATE esta en BAJO entonces Result es A
-			Result <= A;
-		end if;
-	end process;
+		--FLAGS que representa Z segun el criterio de mandar 1 si es igual a 0	
+		FLAGS_ALU(2) <= '1' when (to_integer(signed(A_ALU)) - to_integer(signed(B_ALU))) = 0 
+								  else '0';
+								  
+		--FLAGS que representa N segun el criterio de mandar 1 si es menor a 0						  
+		FLAGS_ALU(3) <= '1' when (to_integer(signed(A_ALU)) - to_integer(signed(B_ALU))) < 0
+								  else '0';
+								  
+		--FLAGS que representa I						  
+		FLAGS_ALU(4) <= '0' when (OP_ALU = "011100")
+							     else '1' when (OP_ALU = "011101")
+								  else I_IN;
+	
 end Behavioral;
-

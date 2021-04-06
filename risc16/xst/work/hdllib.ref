@@ -1,0 +1,19 @@
+AR mux behavioral D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux2.vhd sub00/vhpl15 1611540432
+AR instructionmemory behavioral D:/Downloads/InstructionMemory.vhd sub00/vhpl09 1611540426
+AR datamemory behavioral D:/Downloads/DataMemory.vhd sub00/vhpl05 1611540422
+AR reg8 behavioral D:/Downloads/Reg8.vhd sub00/vhpl13 1611540430
+EN pc NULL D:/Downloads/PC.vhd sub00/vhpl10 1611540427
+AR decoder behavioral "D:/Downloads/Decoder (1).vhd" sub00/vhpl07 1611540424
+EN instructionmemory NULL D:/Downloads/InstructionMemory.vhd sub00/vhpl08 1611540425
+EN controlunit NULL D:/Downloads/ControlUnit.vhd sub00/vhpl02 1611540419
+EN risc16 NULL D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd sub00/vhpl16 1611540435
+EN mux NULL D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux2.vhd sub00/vhpl14 1611540431
+AR alu behavioral "D:/Downloads/ALU (1).vhd" sub00/vhpl01 1611540418
+AR risc16 behavioral D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd sub00/vhpl17 1611540436
+EN datamemory NULL D:/Downloads/DataMemory.vhd sub00/vhpl04 1611540421
+EN decoder NULL "D:/Downloads/Decoder (1).vhd" sub00/vhpl06 1611540423
+EN reg8 NULL D:/Downloads/Reg8.vhd sub00/vhpl12 1611540429
+AR pc behavioral D:/Downloads/PC.vhd sub00/vhpl11 1611540428
+EN risc16tb NULL D:/Downloads/RISC16TB.vhd sub00/vhpl18 1611273378
+AR controlunit behavioral D:/Downloads/ControlUnit.vhd sub00/vhpl03 1611540420
+EN alu NULL "D:/Downloads/ALU (1).vhd" sub00/vhpl00 1611540417

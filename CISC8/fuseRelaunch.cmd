@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Github/arquitectura-de-computadoras/CISC8/CISC8_TB_isim_beh.exe" -prj "D:/Github/arquitectura-de-computadoras/CISC8/CISC8_TB_beh.prj" "work.CISC8_TB" 

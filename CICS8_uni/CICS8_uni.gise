@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="CICS8_uni.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CISC8_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CISC8_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CISC8_TB_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CISC8_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CISC8_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1608612117" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1608612117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1608612117" xil_pn:in_ck="-8761724284467366830" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1608612117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALU (2).vhd"/>
+      <outfile xil_pn:name="AcumuladorA.vhd"/>
+      <outfile xil_pn:name="AddressDecod.vhd"/>
+      <outfile xil_pn:name="CISC8.vhd"/>
+      <outfile xil_pn:name="CISC8_TB.vhd"/>
+      <outfile xil_pn:name="CU (1).vhd"/>
+      <outfile xil_pn:name="Decodificador.vhd"/>
+      <outfile xil_pn:name="Flags.vhd"/>
+      <outfile xil_pn:name="IO.vhd"/>
+      <outfile xil_pn:name="IR.vhd"/>
+      <outfile xil_pn:name="InterruptHandler.vhd"/>
+      <outfile xil_pn:name="LogControl (2).vhd"/>
+      <outfile xil_pn:name="Memory (1).vhd"/>
+      <outfile xil_pn:name="Mux2.vhd"/>
+      <outfile xil_pn:name="Mux4.vhd"/>
+      <outfile xil_pn:name="PC.vhd"/>
+      <outfile xil_pn:name="SP (2).vhd"/>
+      <outfile xil_pn:name="X.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1608612117" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2486770040103613839" xil_pn:start_ts="1608612117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1608612117" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3094584100507485295" xil_pn:start_ts="1608612117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1608612117" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5245849356916375574" xil_pn:start_ts="1608612117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1608612117" xil_pn:in_ck="-8761724284467366830" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1608612117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALU (2).vhd"/>
+      <outfile xil_pn:name="AcumuladorA.vhd"/>
+      <outfile xil_pn:name="AddressDecod.vhd"/>
+      <outfile xil_pn:name="CISC8.vhd"/>
+      <outfile xil_pn:name="CISC8_TB.vhd"/>
+      <outfile xil_pn:name="CU (1).vhd"/>
+      <outfile xil_pn:name="Decodificador.vhd"/>
+      <outfile xil_pn:name="Flags.vhd"/>
+      <outfile xil_pn:name="IO.vhd"/>
+      <outfile xil_pn:name="IR.vhd"/>
+      <outfile xil_pn:name="InterruptHandler.vhd"/>
+      <outfile xil_pn:name="LogControl (2).vhd"/>
+      <outfile xil_pn:name="Memory (1).vhd"/>
+      <outfile xil_pn:name="Mux2.vhd"/>
+      <outfile xil_pn:name="Mux4.vhd"/>
+      <outfile xil_pn:name="PC.vhd"/>
+      <outfile xil_pn:name="SP (2).vhd"/>
+      <outfile xil_pn:name="X.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1608612120" xil_pn:in_ck="-8761724284467366830" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7925505072006626390" xil_pn:start_ts="1608612117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CISC8_TB_beh.prj"/>
+      <outfile xil_pn:name="CISC8_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1608612121" xil_pn:in_ck="-7578555537294340633" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2245548966141559737" xil_pn:start_ts="1608612120">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CISC8_TB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+  </transforms>
+
+</generated_project>

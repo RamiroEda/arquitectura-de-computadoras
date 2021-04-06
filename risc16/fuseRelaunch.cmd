@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Github/arquitectura-de-computadoras/risc16/RISC16TB_isim_beh.exe" -prj "D:/Github/arquitectura-de-computadoras/risc16/RISC16TB_beh.prj" "work.RISC16TB" 

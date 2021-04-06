@@ -1,0 +1,28 @@
+Command line:
+   EasyprocessorTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62473
+
+Fri Nov 20 19:09:14 2020
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5159.85 Meg
+
+ Total Signals          : 117
+ Total Nets             : 2337
+ Total Signal Drivers   : 56
+ Total Blocks           : 16
+ Total Primitive Blocks : 14
+ Total Processes        : 41
+ Total Traceable Variables  : 17
+ Total Scalar Nets and Variables : 3342
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5159.85 Meg
+
+Fri Nov 20 19:09:17 2020
+

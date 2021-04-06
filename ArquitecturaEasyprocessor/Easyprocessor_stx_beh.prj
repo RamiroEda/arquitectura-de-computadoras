@@ -1,0 +1,8 @@
+vhdl isim_temp "Registers.vhd"
+vhdl isim_temp "Reg.vhd"
+vhdl isim_temp "ProgCount.vhd"
+vhdl isim_temp "Mux.vhd"
+vhdl isim_temp "Memory.vhd"
+vhdl isim_temp "ALU.vhd"
+vhdl isim_temp "C:/Users/PC/Downloads/LogControl.vhd"
+vhdl isim_temp "Easyprocessor.vhd"

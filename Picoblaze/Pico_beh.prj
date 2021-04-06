@@ -1,0 +1,3 @@
+vhdl work "../../../Downloads/leds.vhd"
+vhdl work "../../../Downloads/kcpsm3.vhd"
+vhdl work "../../../Downloads/Pico.vhd"

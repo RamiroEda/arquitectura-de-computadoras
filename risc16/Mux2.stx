@@ -1,0 +1,79 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Github/arquitectura-de-computadoras/risc16/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to D:/Github/arquitectura-de-computadoras/risc16/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Mux2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\Downloads\Reg8.vhd" into library work
+Parsing entity <Reg8>.
+Parsing architecture <Behavioral> of entity <reg8>.
+Parsing VHDL file "D:\Downloads\PC.vhd" into library work
+Parsing entity <PC>.
+Parsing architecture <Behavioral> of entity <pc>.
+Parsing VHDL file "D:\Downloads\InstructionMemory.vhd" into library work
+Parsing entity <InstructionMemory>.
+Parsing architecture <Behavioral> of entity <instructionmemory>.
+Parsing VHDL file "D:\Downloads\Decoder (1).vhd" into library work
+Parsing entity <Decoder>.
+Parsing architecture <Behavioral> of entity <decoder>.
+Parsing VHDL file "D:\Downloads\DataMemory.vhd" into library work
+Parsing entity <DataMemory>.
+Parsing architecture <Behavioral> of entity <datamemory>.
+Parsing VHDL file "D:\Downloads\ControlUnit.vhd" into library work
+Parsing entity <ControlUnit>.
+Parsing architecture <Behavioral> of entity <controlunit>.
+Parsing VHDL file "D:\Downloads\ALU (1).vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "D:\Github\arquitectura-de-computadoras\risc16\RISC16.vhd" into library work
+Parsing entity <RISC16>.
+Parsing architecture <Behavioral> of entity <risc16>.
+ERROR:HDLCompiler:69 - "D:\Github\arquitectura-de-computadoras\risc16\RISC16.vhd" Line 193: <mux> is not declared.
+ERROR:HDLCompiler:69 - "D:\Github\arquitectura-de-computadoras\risc16\RISC16.vhd" Line 199: <mux> is not declared.
+ERROR:HDLCompiler:69 - "D:\Github\arquitectura-de-computadoras\risc16\RISC16.vhd" Line 206: <unsigned> is not declared.
+ERROR:HDLCompiler:622 - "D:\Github\arquitectura-de-computadoras\risc16\RISC16.vhd" Line 206: Near std_logic_vector ; type conversion expression type cannot be determined uniquely
+ERROR:HDLCompiler:854 - "D:\Github\arquitectura-de-computadoras\risc16\RISC16.vhd" Line 38: Unit <behavioral> ignored due to previous errors.
+VHDL file D:\Github\arquitectura-de-computadoras\risc16\RISC16.vhd ignored due to errors
+--> 
+
+Total memory usage is 4501624 kilobytes
+
+Number of errors   :    5 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

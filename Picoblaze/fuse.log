@@ -1,0 +1,11 @@
+Running: D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Github/arquitectura-de-computadoras/Picoblaze/PicoTB_isim_beh.exe -prj D:/Github/arquitectura-de-computadoras/Picoblaze/PicoTB_beh.prj work.PicoTB 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 6
+Turning on mult-threading, number of parallel sub-compilation jobs: 12 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/Picoblaze/../../../Downloads/leds.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/Picoblaze/../../../Downloads/kcpsm3.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/Picoblaze/../../../Downloads/Pico.vhd" into library work
+ERROR:HDLCompiler:69 - "D:/Github/arquitectura-de-computadoras/Picoblaze/../../../Downloads/Pico.vhd" Line 58: <leds> is not declared.
+ERROR:HDLCompiler:854 - "D:/Github/arquitectura-de-computadoras/Picoblaze/../../../Downloads/Pico.vhd" Line 12: Unit <behavioral> ignored due to previous errors.
+VHDL file D:/Github/arquitectura-de-computadoras/Picoblaze/../../../Downloads/Pico.vhd ignored due to errors

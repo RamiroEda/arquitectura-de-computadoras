@@ -1,0 +1,2 @@
+vhdl isim_temp "../ArquitecturaEasyprocessor/ALU.vhd"
+vhdl isim_temp "C:/Users/PC/Downloads/ALU_TB.vhd"

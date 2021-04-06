@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/ALUTB_isim_beh.exe" -prj "D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/ALUTB_beh.prj" "work.ALUTB" 
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/Easyprocessor_isim_beh.exe" -prj "D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/Easyprocessor_beh.prj" "work.Easyprocessor" 

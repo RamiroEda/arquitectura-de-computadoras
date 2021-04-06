@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.xst" -ofn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Downloads/RISC16.ucf -p xc7a100t-csg324-3 RISC16.ngc RISC16.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o RISC16_map.ncd RISC16.ngd RISC16.pcf 
+xst -intstyle ise -ifn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.xst" -ofn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Downloads/RISC16.ucf -p xc3s50-pq208-5 RISC16.ngc RISC16.ngd  
+map -intstyle ise -p xc3s50-pq208-5 -cm area -ir off -pr off -c 100 -o RISC16_map.ncd RISC16.ngd RISC16.pcf 
+xst -intstyle ise -ifn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.xst" -ofn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Downloads/RISC16.ucf -p xc3s50-pq208-5 RISC16.ngc RISC16.ngd  
+xst -intstyle ise -ifn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.xst" -ofn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Downloads/RISC16.ucf -p xc3sd1800a-fg676-4 RISC16.ngc RISC16.ngd  
+map -intstyle ise -p xc3sd1800a-fg676-4 -cm area -ir off -pr off -c 100 -o RISC16_map.ncd RISC16.ngd RISC16.pcf 
+xst -intstyle ise -ifn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.xst" -ofn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Downloads/RISC16.ucf -p xc3s500e-fg320-4 RISC16.ngc RISC16.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RISC16_map.ncd RISC16.ngd RISC16.pcf 
+par -w -intstyle ise -ol high -t 1 RISC16_map.ncd RISC16.ncd RISC16.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC16.twx RISC16.ncd -o RISC16.twr RISC16.pcf 
+xst -intstyle ise -ifn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.xst" -ofn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Downloads/RISC16.ucf -p xc3s500e-fg320-4 RISC16.ngc RISC16.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RISC16_map.ncd RISC16.ngd RISC16.pcf 
+par -w -intstyle ise -ol high -t 1 RISC16_map.ncd RISC16.ncd RISC16.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC16.twx RISC16.ncd -o RISC16.twr RISC16.pcf 
+xst -intstyle ise -ifn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.xst" -ofn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Downloads/RISC16.ucf -uc "D:/Downloads/RISC16 (1).ucf" -p xc3s500e-fg320-4 RISC16.ngc RISC16.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RISC16_map.ncd RISC16.ngd RISC16.pcf 
+par -w -intstyle ise -ol high -t 1 RISC16_map.ncd RISC16.ncd RISC16.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC16.twx RISC16.ncd -o RISC16.twr RISC16.pcf 
+xst -intstyle ise -ifn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.xst" -ofn "D:/Github/arquitectura-de-computadoras/risc16/RISC16.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/Downloads/RISC16.ucf -uc "D:/Downloads/RISC16 (1).ucf" -p xc3s500e-fg320-4 RISC16.ngc RISC16.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o RISC16_map.ncd RISC16.ngd RISC16.pcf 
+par -w -intstyle ise -ol high -t 1 RISC16_map.ncd RISC16.ncd RISC16.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml RISC16.twx RISC16.ncd -o RISC16.twr RISC16.pcf 

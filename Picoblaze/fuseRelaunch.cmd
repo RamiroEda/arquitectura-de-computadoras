@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Github/arquitectura-de-computadoras/Picoblaze/PicoTB_isim_beh.exe" -prj "D:/Github/arquitectura-de-computadoras/Picoblaze/PicoTB_beh.prj" "work.PicoTB" 

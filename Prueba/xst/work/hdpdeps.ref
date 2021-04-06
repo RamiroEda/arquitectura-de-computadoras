@@ -1,0 +1,24 @@
+V3 36
+FL D:/Downloads/kcpsm3.vhd 2021/01/24.20:21:17 P.58f
+EN work/kcpsm3 1611550950 FL D:/Downloads/kcpsm3.vhd PB ieee/std_logic_1164 1364358218 \
+      PB ieee/std_logic_arith 1364358219 PB ieee/STD_LOGIC_UNSIGNED 1364358221 \
+      LB unisim PH unisim/VCOMPONENTS 1364358225
+AR work/kcpsm3/low_level_definition 1611550951 \
+      FL D:/Downloads/kcpsm3.vhd EN work/kcpsm3 1611550950 CP LUT1 CP FDR CP FDS \
+      CP LUT4 CP FD CP FDE CP LUT3 CP FDRE CP LUT2 CP MUXCY CP XORCY CP INV CP string \
+      CP label CP FDRSE CP RAM16X1D CP RAM64X1S CP MUXF5 CP RAM32X1S
+FL D:/Downloads/leds.vhd 2021/01/24.22:48:29 P.58f
+EN work/leds 1611550952 FL D:/Downloads/leds.vhd PB ieee/std_logic_1164 1364358218 \
+      PB ieee/std_logic_arith 1364358219 PB ieee/STD_LOGIC_UNSIGNED 1364358221 \
+      LB unisim PH unisim/VCOMPONENTS 1364358225
+AR work/leds/low_level_definition 1611550953 \
+      FL D:/Downloads/leds.vhd EN work/leds 1611550952 CP RAMB16_S18
+FL D:/Downloads/Pico.vhd 2021/01/24.22:57:53 P.58f
+EN work/Pico 0 FL D:/Downloads/Pico.vhd PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223
+AR work/Pico/Behavioral 0 \
+      FL D:/Downloads/Pico.vhd EN work/Pico 0 CP kcpsm3 CP leds
+EN work/PicoTB 0 FL D:/Downloads/PicoTB.vhd PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223
+AR work/PicoTB/behavior 0 \
+      FL D:/Downloads/PicoTB.vhd EN work/PicoTB 0 CP Pico

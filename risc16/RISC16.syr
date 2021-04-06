@@ -1,0 +1,835 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: RISC16.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RISC16.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RISC16"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : RISC16
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/RISC16/Behavioral is now defined in a different file.  It was defined in "D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd", and is now defined in "D:/Downloads/RISC16.vhd".
+WARNING:HDLParsers:3607 - Unit work/RISC16 is now defined in a different file.  It was defined in "D:/Downloads/RISC16.vhd", and is now defined in "D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd".
+WARNING:HDLParsers:3607 - Unit work/RISC16/Behavioral is now defined in a different file.  It was defined in "D:/Downloads/RISC16.vhd", and is now defined in "D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd".
+Compiling vhdl file "D:/Downloads/ALU (1).vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Downloads/ControlUnit.vhd" in Library work.
+Architecture behavioral of Entity controlunit is up to date.
+Compiling vhdl file "D:/Downloads/DataMemory.vhd" in Library work.
+Architecture behavioral of Entity datamemory is up to date.
+Compiling vhdl file "D:/Downloads/Decoder (1).vhd" in Library work.
+Architecture behavioral of Entity decoder is up to date.
+Compiling vhdl file "D:/Downloads/InstructionMemory.vhd" in Library work.
+Architecture behavioral of Entity instructionmemory is up to date.
+Compiling vhdl file "D:/Downloads/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "D:/Downloads/Reg8.vhd" in Library work.
+Architecture behavioral of Entity reg8 is up to date.
+Compiling vhdl file "D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux2.vhd" in Library work.
+Architecture behavioral of Entity mux is up to date.
+Compiling vhdl file "D:/Downloads/RISC16.vhd" in Library work.
+Architecture behavioral of Entity risc16 is up to date.
+Compiling vhdl file "D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd" in Library work.
+Architecture behavioral of Entity risc16 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RISC16> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+WARNING:Xst:2094 - "D:/Downloads/ALU (1).vhd" line 21: Default value is ignored for signal <Inm11>.
+
+Analyzing hierarchy for entity <ControlUnit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DataMemory> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Decoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <InstructionMemory> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Reg8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Mux> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RISC16> in library <work> (Architecture <behavioral>).
+Entity <RISC16> analyzed. Unit <RISC16> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2094 - "D:/Downloads/ALU (1).vhd" line 21: Default value is ignored for signal <Inm11>.
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <ControlUnit> in library <work> (Architecture <behavioral>).
+Entity <ControlUnit> analyzed. Unit <ControlUnit> generated.
+
+Analyzing Entity <DataMemory> in library <work> (Architecture <behavioral>).
+Entity <DataMemory> analyzed. Unit <DataMemory> generated.
+
+Analyzing Entity <Decoder> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "D:/Downloads/Decoder (1).vhd" line 31: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Instr>
+Entity <Decoder> analyzed. Unit <Decoder> generated.
+
+Analyzing Entity <InstructionMemory> in library <work> (Architecture <behavioral>).
+Entity <InstructionMemory> analyzed. Unit <InstructionMemory> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing Entity <Reg8> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <Regs<0>> in unit <Reg8> has a constant value of 0000000000000000 during circuit operation. The register is replaced by logic.
+Entity <Reg8> analyzed. Unit <Reg8> generated.
+
+Analyzing Entity <Mux> in library <work> (Architecture <behavioral>).
+Entity <Mux> analyzed. Unit <Mux> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALU>.
+    Related source file is "D:/Downloads/ALU (1).vhd".
+WARNING:Xst:646 - Signal <R7> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <Inm11> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000.
+    Found 16-bit comparator equal for signal <Branch$cmp_eq0001> created at line 91.
+    Found 16-bit comparator greatequal for signal <Branch$cmp_ge0000> created at line 91.
+    Found 16-bit comparator greater for signal <Branch$cmp_gt0000> created at line 91.
+    Found 16-bit comparator lessequal for signal <Branch$cmp_le0000> created at line 91.
+    Found 16-bit comparator less for signal <Branch$cmp_lt0000> created at line 91.
+    Found 16-bit comparator not equal for signal <Branch$cmp_ne0000> created at line 91.
+    Found 16-bit adder for signal <Inm16$addsub0000>.
+    Found 16-bit adder for signal <PC$add0000> created at line 78.
+    Found 16-bit adder for signal <PC$addsub0000>.
+    Found 16-bit adder for signal <PC$share0001>.
+    Found 16-bit addsub for signal <RC$addsub0000>.
+    Found 16-bit subtractor for signal <RC$addsub0001> created at line 24.
+    Found 16-bit adder for signal <RC$addsub0002> created at line 24.
+    Found 16-bit comparator greatequal for signal <RC$cmp_ge0000> created at line 24.
+    Found 16-bit comparator greatequal for signal <RC$cmp_ge0001> created at line 24.
+    Found 16-bit comparator greater for signal <RC$cmp_gt0000> created at line 24.
+    Found 16-bit comparator lessequal for signal <RC$cmp_le0000> created at line 24.
+    Found 16-bit comparator less for signal <RC$cmp_lt0000> created at line 24.
+    Found 16-bit comparator less for signal <RC$cmp_lt0001> created at line 24.
+    Found 1-bit xor2 for signal <RC$xor0000> created at line 24.
+    Found 1-bit xor2 for signal <RC$xor0001> created at line 24.
+    Found 1-bit xor2 for signal <RC$xor0002> created at line 24.
+    Found 1-bit xor2 for signal <RC$xor0003> created at line 24.
+    Found 1-bit xor2 for signal <RC$xor0004> created at line 24.
+    Found 1-bit xor2 for signal <RC$xor0005> created at line 24.
+    Found 1-bit xor2 for signal <RC$xor0006> created at line 24.
+    Found 1-bit xor2 for signal <RC$xor0007> created at line 24.
+    Found 16-bit xor2 for signal <RC$xor0008> created at line 24.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <ControlUnit>.
+    Related source file is "D:/Downloads/ControlUnit.vhd".
+    Found 6-bit comparator greatequal for signal <PC_cmd$cmp_ge0000> created at line 28.
+    Found 6-bit comparator lessequal for signal <PC_cmd$cmp_le0000> created at line 28.
+    Found 6-bit comparator lessequal for signal <PC_cmd$cmp_le0001> created at line 28.
+    Found 6-bit comparator greatequal for signal <RegEnable$cmp_ge0000> created at line 52.
+    Found 6-bit comparator lessequal for signal <RegEnable$cmp_le0000> created at line 52.
+    Summary:
+	inferred   5 Comparator(s).
+Unit <ControlUnit> synthesized.
+
+
+Synthesizing Unit <DataMemory>.
+    Related source file is "D:/Downloads/DataMemory.vhd".
+WARNING:Xst:647 - Input <Data_a<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x16-bit single-port RAM <Mram_dataRAM> for signal <dataRAM>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <DataMemory> synthesized.
+
+
+Synthesizing Unit <Decoder>.
+    Related source file is "D:/Downloads/Decoder (1).vhd".
+Unit <Decoder> synthesized.
+
+
+Synthesizing Unit <InstructionMemory>.
+    Related source file is "D:/Downloads/InstructionMemory.vhd".
+WARNING:Xst:647 - Input <I_a<15:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <IROM> is used but never assigned. Tied to default value.
+    Found 256x16-bit ROM for signal <I_do>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <InstructionMemory> synthesized.
+
+
+Synthesizing Unit <PC>.
+    Related source file is "D:/Downloads/PC.vhd".
+WARNING:Xst:647 - Input <PCin<15:11>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PCin<7:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16-bit register for signal <Aux>.
+    Found 16-bit adder for signal <Aux$mux0000>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <Reg8>.
+    Related source file is "D:/Downloads/Reg8.vhd".
+    Found 112-bit register for signal <Regs<1:7>>.
+    Found 16-bit register for signal <salidaA>.
+    Found 16-bit register for signal <salidaB>.
+    Summary:
+	inferred 144 D-type flip-flop(s).
+Unit <Reg8> synthesized.
+
+
+Synthesizing Unit <Mux>.
+    Related source file is "D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux2.vhd".
+Unit <Mux> synthesized.
+
+
+Synthesizing Unit <RISC16>.
+    Related source file is "D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd".
+    Found 16-bit adder for signal <MUX1>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <RISC16> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x16-bit single-port RAM                            : 1
+# ROMs                                                 : 1
+ 256x16-bit ROM                                        : 1
+# Adders/Subtractors                                   : 9
+ 16-bit adder                                          : 7
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+# Registers                                            : 10
+ 16-bit register                                       : 10
+# Comparators                                          : 17
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greatequal                          : 3
+ 16-bit comparator greater                             : 2
+ 16-bit comparator less                                : 3
+ 16-bit comparator lessequal                           : 2
+ 16-bit comparator not equal                           : 1
+ 6-bit comparator greatequal                           : 2
+ 6-bit comparator lessequal                            : 3
+# Xors                                                 : 9
+ 1-bit xor2                                            : 8
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DataMemory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dataRAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 16-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <Data_we>       | high     |
+    |     addrA          | connected to signal <Data_a>        |          |
+    |     diA            | connected to signal <Data_di>       |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <DataMemory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 256x16-bit single-port distributed RAM                : 1
+# ROMs                                                 : 1
+ 256x16-bit ROM                                        : 1
+# Adders/Subtractors                                   : 9
+ 16-bit adder                                          : 7
+ 16-bit addsub                                         : 1
+ 16-bit subtractor                                     : 1
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+# Comparators                                          : 17
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greatequal                          : 3
+ 16-bit comparator greater                             : 2
+ 16-bit comparator less                                : 3
+ 16-bit comparator lessequal                           : 2
+ 16-bit comparator not equal                           : 1
+ 6-bit comparator greatequal                           : 2
+ 6-bit comparator lessequal                            : 3
+# Xors                                                 : 9
+ 1-bit xor2                                            : 8
+ 16-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: Madd_PC_share0001_cy<2>, Madd_PC_share0001_cy<8>, Madd_PC_share0001_cy<3>, Madd_PC_share0001_cy<7>, Madd_PC_share0001_cy<13>, RC<15>, Madd_PC_share0001_cy<1>, RC_mux0003<15>, Madd_PC_share0001_cy<0>, Madd_PC_share0001_cy<9>, Madd_PC_share0001_cy<5>, Madd_PC_share0001_cy<14>, Madd_PC_share0001_cy<10>, Madd_PC_share0001_cy<11>, PC_share0001<15>, PC<15>, RC_mux0001<15>, Madd_PC_share0001_cy<6>, PC<0>, Madd_PC_share0001_cy<12>, Madd_PC_share0001_cy<4>, PC_share0001<0>, Madd_PC_share0001_lut<0>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<7>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<5>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<10>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<12>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<8>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<1>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<6>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<14>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<4>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<2>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<15>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<9>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<3>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<11>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<13>.
+WARNING:Xst:2170 - Unit ALU : the following signal(s) form a combinatorial loop: PC<0>.
+
+Optimizing unit <RISC16> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <DataMemory> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <Reg8> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RISC16, actual ratio is 15.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM128> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM127> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM126> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM125> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM124> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM123> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM122> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM121> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM119> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM118> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM120> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM117> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM116> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM115> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM114> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM113> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM112> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM110> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM109> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM111> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM108> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM107> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM106> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM105> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM104> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM103> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM101> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM100> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM102> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM99> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM98> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM97> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM96> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM95> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM94> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM92> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM91> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM93> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM90> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM89> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM88> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM87> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM86> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM85> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM83> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM82> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM84> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM81> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM80> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM79> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM78> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM77> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM76> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM74> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM73> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM75> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM72> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM71> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM70> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM69> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM68> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM67> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM65> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM64> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM66> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM63> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM62> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM61> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM60> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM59> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM58> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM56> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM55> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM57> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM54> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM53> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM52> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM51> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM50> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM49> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM47> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM46> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM48> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM45> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM44> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM43> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM42> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM41> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM40> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM38> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM37> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM39> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM36> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM35> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM34> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM33> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM32> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM31> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM29> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM28> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM30> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM27> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM26> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM25> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM24> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM23> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM22> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM20> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM19> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM21> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM18> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM17> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM16> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM15> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM14> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM13> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM11> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM10> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM12> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM9> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM8> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM6> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM5> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM7> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM4> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM3> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM1> of sequential type is unconnected in block <RISC16>.
+WARNING:Xst:2677 - Node <mDataMemory/Mram_dataRAM2> of sequential type is unconnected in block <RISC16>.
+FlipFlop mPC/Aux_1 has been replicated 2 time(s)
+FlipFlop mPC/Aux_2 has been replicated 2 time(s)
+FlipFlop mPC/Aux_3 has been replicated 1 time(s)
+FlipFlop mPC/Aux_6 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 166
+ Flip-Flops                                            : 166
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RISC16.ngr
+Top Level Output File Name         : RISC16
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 1326
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 16
+#      LUT2                        : 166
+#      LUT2_D                      : 2
+#      LUT2_L                      : 2
+#      LUT3                        : 194
+#      LUT3_D                      : 13
+#      LUT3_L                      : 4
+#      LUT4                        : 452
+#      LUT4_D                      : 19
+#      LUT4_L                      : 15
+#      MUXCY                       : 200
+#      MUXF5                       : 96
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 166
+#      FDC                         : 32
+#      FDCE                        : 134
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 1
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      479  out of   4656    10%  
+ Number of Slice Flip Flops:            166  out of   9312     1%  
+ Number of 4 input LUTs:                900  out of   9312     9%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    232     7%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 166   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 166   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 16.462ns (Maximum Frequency: 60.748MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 99.008ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 16.462ns (frequency: 60.748MHz)
+  Total number of paths / destination ports: 1193147 / 278
+-------------------------------------------------------------------------
+Delay:               16.462ns (Levels of Logic = 22)
+  Source:            mPC/Aux_0 (FF)
+  Destination:       mPC/Aux_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: mPC/Aux_0 to mPC/Aux_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            43   0.591   1.270  mPC/Aux_0 (mPC/Aux_0)
+     LUT4:I3->O            2   0.704   0.451  mInstructionMemory/Mrom_I_do421 (mInstructionMemory/Mrom_I_do42)
+     LUT4:I3->O            1   0.704   0.499  mInstructionMemory/Mrom_I_do551_7 (mInstructionMemory/Mrom_I_do551_7)
+     LUT3:I1->O            1   0.704   0.000  PC_OUT<7>987_F (N324)
+     MUXF5:I0->O          69   0.321   1.309  PC_OUT<7>987 (I_do<11>)
+     LUT3_D:I2->O          1   0.704   0.424  mALU/Branch67 (mALU/Branch67)
+     LUT4_D:I3->LO         1   0.704   0.104  mALU/Branch77 (N654)
+     LUT4:I3->O           13   0.704   0.987  mALU/Branch89 (mALU/Branch89)
+     LUT4:I3->O           24   0.704   1.287  mPC/Aux_mux0001<14>17_SW0 (mPC/Aux_and0001)
+     LUT3:I2->O            1   0.704   0.000  mPC/Aux_mux0001<5>_SW2_F (N334)
+     MUXF5:I0->O           1   0.321   0.455  mPC/Aux_mux0001<5>_SW2 (N300)
+     LUT4:I2->O            1   0.704   0.000  mPC/Madd_Aux_mux0000_lut<5> (mPC/Madd_Aux_mux0000_lut<5>)
+     MUXCY:S->O            1   0.464   0.000  mPC/Madd_Aux_mux0000_cy<5> (mPC/Madd_Aux_mux0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  mPC/Madd_Aux_mux0000_cy<6> (mPC/Madd_Aux_mux0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  mPC/Madd_Aux_mux0000_cy<7> (mPC/Madd_Aux_mux0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  mPC/Madd_Aux_mux0000_cy<8> (mPC/Madd_Aux_mux0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  mPC/Madd_Aux_mux0000_cy<9> (mPC/Madd_Aux_mux0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  mPC/Madd_Aux_mux0000_cy<10> (mPC/Madd_Aux_mux0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  mPC/Madd_Aux_mux0000_cy<11> (mPC/Madd_Aux_mux0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  mPC/Madd_Aux_mux0000_cy<12> (mPC/Madd_Aux_mux0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  mPC/Madd_Aux_mux0000_cy<13> (mPC/Madd_Aux_mux0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  mPC/Madd_Aux_mux0000_cy<14> (mPC/Madd_Aux_mux0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.000  mPC/Madd_Aux_mux0000_xor<15> (mPC/Aux_mux0000<15>)
+     FDCE:D                    0.308          mPC/Aux_15
+    ----------------------------------------
+    Total                     16.462ns (9.676ns logic, 6.786ns route)
+                                       (58.8% logic, 41.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 56088645 / 16
+-------------------------------------------------------------------------
+Offset:              99.008ns (Levels of Logic = 90)
+  Source:            mPC/Aux_0 (FF)
+  Destination:       salida<15> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: mPC/Aux_0 to salida<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            43   0.591   1.270  mPC/Aux_0 (mPC/Aux_0)
+     LUT4:I3->O            2   0.704   0.451  mInstructionMemory/Mrom_I_do421 (mInstructionMemory/Mrom_I_do42)
+     LUT4:I3->O            1   0.704   0.499  mInstructionMemory/Mrom_I_do551_7 (mInstructionMemory/Mrom_I_do551_7)
+     LUT3:I1->O            1   0.704   0.000  PC_OUT<7>987_F (N324)
+     MUXF5:I0->O          69   0.321   1.309  PC_OUT<7>987 (I_do<11>)
+     LUT3_D:I2->O          1   0.704   0.424  mALU/Branch67 (mALU/Branch67)
+     LUT4_D:I3->LO         1   0.704   0.104  mALU/Branch77 (N654)
+     LUT4:I3->O           13   0.704   1.062  mALU/Branch89 (mALU/Branch89)
+     LUT4:I1->O           16   0.704   1.038  mALU/PC<0>31 (mALU/N39)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<0>_SW0 (N165)
+     LUT3:I0->O            4   0.704   0.762  mALU/PC<0> (mALU/PC<0>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<0> (mALU/Madd_PC_share0001_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<0> (mALU/Madd_PC_share0001_cy<0>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<1> (mALU/PC_share0001<1>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<1>_SW0 (N151)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<1> (mALU/PC<1>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<1> (mALU/Madd_PC_share0001_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<1> (mALU/Madd_PC_share0001_cy<1>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<2> (mALU/PC_share0001<2>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<2>_SW0 (N149)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<2> (mALU/PC<2>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<2> (mALU/Madd_PC_share0001_lut<2>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<2> (mALU/Madd_PC_share0001_cy<2>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<3> (mALU/PC_share0001<3>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<3>_SW0 (N147)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<3> (mALU/PC<3>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<3> (mALU/Madd_PC_share0001_lut<3>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<3> (mALU/Madd_PC_share0001_cy<3>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<4> (mALU/PC_share0001<4>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<4>_SW0 (N145)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<4> (mALU/PC<4>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<4> (mALU/Madd_PC_share0001_lut<4>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<4> (mALU/Madd_PC_share0001_cy<4>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<5> (mALU/PC_share0001<5>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<5>_SW0 (N143)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<5> (mALU/PC<5>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<5> (mALU/Madd_PC_share0001_lut<5>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<5> (mALU/Madd_PC_share0001_cy<5>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<6> (mALU/PC_share0001<6>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<6>_SW0 (N141)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<6> (mALU/PC<6>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<6> (mALU/Madd_PC_share0001_lut<6>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<6> (mALU/Madd_PC_share0001_cy<6>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<7> (mALU/PC_share0001<7>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<7>_SW0 (N139)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<7> (mALU/PC<7>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<7> (mALU/Madd_PC_share0001_lut<7>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<7> (mALU/Madd_PC_share0001_cy<7>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<8> (mALU/PC_share0001<8>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<8>_SW0 (N137)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<8> (mALU/PC<8>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<8> (mALU/Madd_PC_share0001_lut<8>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<8> (mALU/Madd_PC_share0001_cy<8>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<9> (mALU/PC_share0001<9>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<9>_SW0 (N135)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<9> (mALU/PC<9>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<9> (mALU/Madd_PC_share0001_lut<9>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<9> (mALU/Madd_PC_share0001_cy<9>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<10> (mALU/PC_share0001<10>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<10>_SW0 (N163)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<10> (mALU/PC<10>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<10> (mALU/Madd_PC_share0001_lut<10>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<10> (mALU/Madd_PC_share0001_cy<10>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<11> (mALU/PC_share0001<11>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<11>_SW0 (N161)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<11> (mALU/PC<11>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<11> (mALU/Madd_PC_share0001_lut<11>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<11> (mALU/Madd_PC_share0001_cy<11>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<12> (mALU/PC_share0001<12>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<12>_SW0 (N159)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<12> (mALU/PC<12>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<12> (mALU/Madd_PC_share0001_lut<12>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<12> (mALU/Madd_PC_share0001_cy<12>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<13> (mALU/PC_share0001<13>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<13>_SW0 (N157)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<13> (mALU/PC<13>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<13> (mALU/Madd_PC_share0001_lut<13>)
+     MUXCY:S->O            1   0.464   0.000  mALU/Madd_PC_share0001_cy<13> (mALU/Madd_PC_share0001_cy<13>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<14> (mALU/PC_share0001<14>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<14>_SW0 (N155)
+     LUT3:I0->O            3   0.704   0.706  mALU/PC<14> (mALU/PC<14>)
+     LUT2:I0->O            1   0.704   0.000  mALU/Madd_PC_share0001_lut<14> (mALU/Madd_PC_share0001_lut<14>)
+     MUXCY:S->O            0   0.464   0.000  mALU/Madd_PC_share0001_cy<14> (mALU/Madd_PC_share0001_cy<14>)
+     XORCY:CI->O           1   0.804   0.424  mALU/Madd_PC_share0001_xor<15> (mALU/PC_share0001<15>)
+     LUT4:I3->O            1   0.704   0.595  mALU/PC<15>_SW0 (N153)
+     LUT3:I0->O            3   0.704   0.566  mALU/PC<15> (mALU/PC<15>)
+     LUT4:I2->O            1   0.704   0.424  mALU/RC<15>124 (mALU/RC<15>124)
+     LUT4:I3->O            1   0.704   0.424  mALU/RC<15>137 (mALU/RC<15>137)
+     LUT4:I3->O            1   0.704   0.455  mALU/RC<15>166 (mALU/RC<15>166)
+     LUT3:I2->O            1   0.704   0.420  mALU/RC<15>187 (salida_15_OBUF)
+     OBUF:I->O                 3.272          salida_15_OBUF (salida<15>)
+    ----------------------------------------
+    Total                     99.008ns (64.036ns logic, 34.972ns route)
+                                       (64.7% logic, 35.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.12 secs
+ 
+--> 
+
+Total memory usage is 4536120 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  158 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

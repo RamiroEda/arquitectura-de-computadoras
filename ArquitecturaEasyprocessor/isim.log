@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\Github\arquitectura-de-computadoras\ArquitecturaEasyprocessor\ALUTB_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/ALUTB_isim_beh.wdb 
+Running: D:\Github\arquitectura-de-computadoras\ArquitecturaEasyprocessor\Easyprocessor_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/Github/arquitectura-de-computadoras/ArquitecturaEasyprocessor/Easyprocessor_isim_beh.wdb 
 ISim P.58f (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -8,10 +8,5 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 170 ns: Note: 
-
-Número de pruebas realizadas: 17
-
-Número de pruebas no superadas: 0
-
- (/alutb/).
+at 0 ps, Instance /easyprocessor/registros/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /easyprocessor/memoryProgram/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

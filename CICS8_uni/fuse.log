@@ -1,0 +1,55 @@
+Running: D:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/Github/arquitectura-de-computadoras/CICS8_uni/CISC8_TB_isim_beh.exe -prj D:/Github/arquitectura-de-computadoras/CICS8_uni/CISC8_TB_beh.prj work.CISC8_TB 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 6
+Turning on mult-threading, number of parallel sub-compilation jobs: 12 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/X.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/SP (2).vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/PC.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux4.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux2.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/Memory (1).vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/IR.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/IO.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/InterruptHandler.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/Flags.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/Decodificador.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/CU (1).vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/ALU (2).vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/AddressDecod.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/AcumuladorA.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/CISC8.vhd" into library work
+Parsing VHDL file "D:/Github/arquitectura-de-computadoras/CICS8_uni/CISC8_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture behavioral of entity AddressDecod [addressdecod_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity A [a_default]
+Compiling architecture behavioral of entity CU [cu_default]
+Compiling architecture behavioral of entity Decoder [decoder_default]
+Compiling architecture behavioral of entity Flags [flags_default]
+Compiling architecture behavioral of entity InterruptHandler [interrupthandler_default]
+Compiling architecture behavioral of entity IO [io_default]
+Compiling architecture behavioral of entity IR [ir_default]
+Compiling architecture behavioral of entity Memory [memory_default]
+Compiling architecture behavioral of entity Mux2 [\Mux2(8)\]
+Compiling architecture behavioral of entity Mux2 [\Mux2(5)\]
+Compiling architecture behavioral of entity Mux4 [mux4_default]
+Compiling architecture behavioral of entity PC [pc_default]
+Compiling architecture behavioral of entity SP [sp_default]
+Compiling architecture behavioral of entity X [x_default]
+Compiling architecture behavioral of entity CISC8 [cisc8_default]
+Compiling architecture behavior of entity cisc8_tb
+Time Resolution for simulation is 1ps.
+Waiting for 13 sub-compilation(s) to finish...
+Compiled 42 VHDL Units
+Built simulation executable D:/Github/arquitectura-de-computadoras/CICS8_uni/CISC8_TB_isim_beh.exe
+Fuse Memory Usage: 39876 KB
+Fuse CPU Usage: 718 ms

@@ -1,0 +1,5 @@
+set -tmpdir "D:/Github/arquitectura-de-computadoras/Prueba/xst/projnav.tmp"
+set -xsthdpdir "D:/Github/arquitectura-de-computadoras/Prueba/xst"
+elaborate
+-ifn Pico.prj
+-ifmt mixed

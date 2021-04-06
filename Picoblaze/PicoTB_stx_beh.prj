@@ -1,0 +1,4 @@
+vhdl isim_temp "../../../Downloads/leds.vhd"
+vhdl isim_temp "../../../Downloads/kcpsm3.vhd"
+vhdl isim_temp "../../../Downloads/Pico.vhd"
+vhdl isim_temp "../../../Downloads/PicoTB.vhd"

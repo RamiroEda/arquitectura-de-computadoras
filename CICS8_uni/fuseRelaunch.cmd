@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/Github/arquitectura-de-computadoras/CICS8_uni/CISC8_TB_isim_beh.exe" -prj "D:/Github/arquitectura-de-computadoras/CICS8_uni/CISC8_TB_beh.prj" "work.CISC8_TB" 

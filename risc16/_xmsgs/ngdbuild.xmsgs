@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;clk&quot; PERIOD = 40.0ns HIGH 50%;&gt; [D:/Downloads/RISC16.ucf(4)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;clk&quot; PERIOD = 20.0ns HIGH 50%;&gt; [D:/Downloads/RISC16 (1).ucf(4)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1345" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;clk&quot; PERIOD = 40.0ns HIGH 50%;&gt; [D:/Downloads/RISC16.ucf(4)]</arg> is overridden by the constraint <arg fmt="%s" index="2">&lt;NET &quot;clk&quot; PERIOD = 20.0ns HIGH 50%;&gt; [D:/Downloads/RISC16 (1).ucf(4)]</arg>. The overriden constraint usually comes from the input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an error.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;PULLDOWN ;&gt; [D:/Downloads/RISC16.ucf(6)]</arg> is overridden on the design object <arg fmt="%s" index="2">reset</arg> by the constraint <arg fmt="%s" index="3">&lt;PULLDOWN ;&gt; [D:/Downloads/RISC16 (1).ucf(6)]</arg>.
+</msg>
+
+</messages>
+

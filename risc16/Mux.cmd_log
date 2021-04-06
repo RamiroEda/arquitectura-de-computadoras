@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../CICS8_uni/Mux2.vhd -prj risc16 -o Mux.spl -module Mux -template D:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 Mux.spl D:/Github/arquitectura-de-computadoras/risc16/Mux.sym 

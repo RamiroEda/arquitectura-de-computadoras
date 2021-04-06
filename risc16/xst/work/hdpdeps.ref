@@ -1,0 +1,56 @@
+V3 40
+FL "D:/Downloads/ALU (1).vhd" 2021/01/24.20:06:55 P.58f
+EN work/ALU 1611540417 FL "D:/Downloads/ALU (1).vhd" PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/ALU/Behavioral 1611540418 \
+      FL "D:/Downloads/ALU (1).vhd" EN work/ALU 1611540417
+FL D:/Downloads/ControlUnit.vhd 2021/01/24.19:43:37 P.58f
+EN work/ControlUnit 1611540419 FL D:/Downloads/ControlUnit.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_UNSIGNED 1364358221 \
+      PB ieee/NUMERIC_STD 1364358223
+AR work/ControlUnit/Behavioral 1611540420 \
+      FL D:/Downloads/ControlUnit.vhd EN work/ControlUnit 1611540419
+FL D:/Downloads/DataMemory.vhd 2021/01/20.17:06:10 P.58f
+EN work/DataMemory 1611540421 FL D:/Downloads/DataMemory.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
+AR work/DataMemory/Behavioral 1611540422 \
+      FL D:/Downloads/DataMemory.vhd EN work/DataMemory 1611540421
+FL "D:/Downloads/Decoder (1).vhd" 2021/01/20.16:30:32 P.58f
+EN work/Decoder 1611540423 FL "D:/Downloads/Decoder (1).vhd" \
+      PB ieee/std_logic_1164 1364358218
+AR work/Decoder/Behavioral 1611540424 \
+      FL "D:/Downloads/Decoder (1).vhd" EN work/Decoder 1611540423
+FL D:/Downloads/InstructionMemory.vhd 2021/01/20.16:31:04 P.58f
+EN work/InstructionMemory 1611540425 FL D:/Downloads/InstructionMemory.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/STD_LOGIC_TEXTIO 1364358222 \
+      PB std/TEXTIO 1364358218 PB ieee/NUMERIC_STD 1364358223
+AR work/InstructionMemory/Behavioral 1611540426 \
+      FL D:/Downloads/InstructionMemory.vhd EN work/InstructionMemory 1611540425
+FL D:/Downloads/PC.vhd 2021/01/20.16:30:34 P.58f
+EN work/PC 1611540427 FL D:/Downloads/PC.vhd PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 PB ieee/STD_LOGIC_UNSIGNED 1364358221
+AR work/PC/Behavioral 1611540428 \
+      FL D:/Downloads/PC.vhd EN work/PC 1611540427
+FL D:/Downloads/Reg8.vhd 2021/01/24.19:41:32 P.58f
+EN work/Reg8 1611540429 FL D:/Downloads/Reg8.vhd PB ieee/std_logic_1164 1364358218
+AR work/Reg8/Behavioral 1611540430 \
+      FL D:/Downloads/Reg8.vhd EN work/Reg8 1611540429
+FL D:/Downloads/RISC16.vhd 2021/01/24.19:36:16 P.58f
+FL D:/Downloads/RISC16TB.vhd 2021/01/20.16:31:07 P.58f
+EN work/RISC16TB 0 FL D:/Downloads/RISC16TB.vhd PB ieee/std_logic_1164 1364358218
+AR work/RISC16TB/behavior 0 \
+      FL D:/Downloads/RISC16TB.vhd EN work/RISC16TB 0 CP RISC16
+FL D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux2.vhd 2021/01/20.17:13:44 P.58f
+EN work/Mux 1611540431 \
+      FL D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux2.vhd \
+      PB ieee/std_logic_1164 1364358218
+AR work/Mux/Behavioral 1611540432 \
+      FL D:/Github/arquitectura-de-computadoras/CICS8_uni/Mux2.vhd EN work/Mux 1611540431
+FL D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd 2021/01/21.16:57:05 P.58f
+EN work/RISC16 1611540435 \
+      FL D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223
+AR work/RISC16/Behavioral 1611540436 \
+      FL D:/Github/arquitectura-de-computadoras/risc16/RISC16.vhd EN work/RISC16 1611540435 \
+      CP ALU CP ControlUnit CP DataMemory CP Decoder CP InstructionMemory CP PC \
+      CP Reg8 CP Mux
